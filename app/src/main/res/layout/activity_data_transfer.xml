@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataTransferActivity">
+
+    <Button
+        android:id="@+id/discoverButton"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="DISCOVER"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/messageText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="29dp"
+        android:text="SEND"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <ListView
+        android:id="@+id/listViewDevices"
+        android:layout_width="396dp"
+        android:layout_height="426dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="110dp">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/messageText"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receiveMessageText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/receiveMessageText"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listViewDevices"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="Message"
+        android:textColor="#1d1d1b" />
+
+</RelativeLayout>

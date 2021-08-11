@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonitorActivity">
+
+    <ScrollView
+        android:id="@+id/scrollViewInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labelTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="TEMPERATURE MONITOR"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelCpuTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelBatteryTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelAmbuientTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelDeviceTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo2"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="LOCATION MONITOR"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelLongitude"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="Loading..."
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelAltitude"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="Loading..."
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelLatitude"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="Loading..."
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelLocationAccuracy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="Loading..."
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelLocationProvider"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="Loading..."
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="Loading..."
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTituloW"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="WIFI MONITOR"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <Switch
+                android:id="@+id/switchWifi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Enable wifi connection" />
+
+            <TextView
+                android:id="@+id/labelWifiSSID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelWifiBSSID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelIP"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelNetworkSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelNetworkLinkSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelNetworkFrequency"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTituloW7"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="BLUETOOTH"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <Switch
+                android:id="@+id/switchBluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Enable bluetooth connection" />
+
+            <EditText
+                android:id="@+id/bluetoothDeviceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <Button
+                android:id="@+id/changeBluetoothNameButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CHANGE NAME" />
+
+            <Button
+                android:id="@+id/sendFileButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SEND FILE" />
+
+            <TextView
+                android:id="@+id/labelTituloW8"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="PAIRED DEVICES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/bluetoothPairedDevices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="Bluetooth is deactivated"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTituloW9"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="AVAILABLE DEVICES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/bluetoothAvailableDevices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="Bluetooth is deactivated"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTituloW2"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="BATTERY MONITOR"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelBatteryTotalCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelBatteryCharge"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelBatteryHealth"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTotalBattery"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelAvaliableBattery"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelBatteryTechnology"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelBatteryChargeMode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelCPUsage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTituloW3"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="RAM MEMORY"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelTotalRam"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelRAMUsage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelAvaliableRAM"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTituloW6"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="CAMERA"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <Spinner
+                android:id="@+id/spinnerCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <SurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="613dp" />
+
+            <Switch
+                android:id="@+id/switchTorch"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:text="Torch mode" />
+
+            <TextView
+                android:id="@+id/labelTituloW4"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="STORAGE MEMORY"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelStorageTotal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelStorageAvaliable"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTituloW5"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="EXTERNAL STORAGE"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelExternalStorage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelExternalAvaliableStorage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

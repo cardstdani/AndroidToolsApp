@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:id="@+id/scrollViewInformation"
+        android:layout_width="match_parent"
+        android:layout_height="531dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelDeviceFeatures">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labelDeviceName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelDeviceID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelDeviceUser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceVersion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelDeviceModel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelDeviceOS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelKernelVersion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelKernelName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelKernelArch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceCPU"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelDeviceCPUCores"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelDeviceCPUFrequency"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelScreenres"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelScreenPixels"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <Switch
+                android:id="@+id/switchAutoRotationScreen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Auto rotation screen"
+                android:textOff="Auto rotation screen" />
+
+            <Switch
+                android:id="@+id/switchAutoBrightness"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Auto brightness"
+                android:textOff="Auto brightness" />
+
+            <TextView
+                android:id="@+id/labelBrightness"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="Brightness"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <SeekBar
+                android:id="@+id/brightnessBar"
+                android:layout_width="match_parent"
+                android:max="1000"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/labelPixelDensity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelDeviceGPU"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceGyro"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceAcelerometer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceFingerprint"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceAudioPro"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceCameraAR"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceFlash"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceIris"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceCompass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceEthernet"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDevice5GHZ"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceStepDetector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceStepCounter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceHeartRateSensor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceFace"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceBluethoot"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceNFC"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDeviceOTG"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:contentDescription="@string/description"
+                android:text="DEVICE NAME"
+                android:textColor="@color/textColor"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:text="EXIT"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toTopOf="@+id/labelDeviceFeatures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelDeviceFeatures"
+        android:layout_width="373dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/scrollViewInformation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-160dp"
+        android:text="DEVICE FEATURES"
+        android:textColor="@color/textColor"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollViewInformation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

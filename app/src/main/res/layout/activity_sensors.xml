@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SensorsActivity">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:id="@+id/scrollViewInformation"
+        android:layout_width="412dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labelTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="LIGHT SENSOR"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:id="@+id/viewSeparador"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelLight"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo3"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="MAGNETIC FIELD SENSOR"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelMagneticX"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelMagneticY"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelMagneticZ"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo4"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="ACCELEROMETER INPUT"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelAccelerometerX"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelAccelerometerY"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelAccelerometerZ"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo25"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="GYROSCOPE INPUT"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelGyroX"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelGyroY"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelGyroZ"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo11"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="GRAVITY"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelGravityX"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelGravityY"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelGravityZ"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo22"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="GEOMAGNETIC VECTOR"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelGeoVectorX"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelGeoVectorY"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelGeoVectorZ"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo12"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="ORIENTATION"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelOrientationX"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelOrientationY"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelOrientationZ"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo10"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="ROTATION VECTOR"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelRotationX"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelRotationY"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelRotationZ"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo19"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="DEGREES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDegreesX"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelDegreesY"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelDegreesZ"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo23"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="COMPASS"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelDegreesCompass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo5"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="PROXIMITY"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelProximity"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo29"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="FINGERPRINT"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <ImageView
+                android:id="@+id/fingerprintImage"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                app:srcCompat="@mipmap/fingerprint_icon" />
+
+            <TextView
+                android:id="@+id/labelFingerprint"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo6"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="HUMIDITY"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelHumidity"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo7"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="STEP COUNTER"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelSteps"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo8"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="PRESSURE SENSOR"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelPressure"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo9"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="HEART RATE"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelHeartRateSensor"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelTitulo21"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="SOUND"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelSound"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:text="DEVICE FEATURES"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo13"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="HARDWARE INFO"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelTitulo14"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="ACCELEROMETER INFO"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelAccelerometerName"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelAccelerometerPower"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelAccelerometerVendor"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelAccelerometerRes"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelAccelerometerMaxRange"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelAccelerometerVersion"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo26"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="GYROSCOPE INFO"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelGyroName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelGyroVendor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelGyroVersion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelGyroPower"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo15"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="LIGHT SENSOR INFO"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelLightName"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelLightPower"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelLightVendor"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelLightRes"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelLightMaxRange"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelLightVersion"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo16"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="STEP COUNTER INFO"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelStepName"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelStepPower"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelStepVendor"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo17"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="PROXIMITY SENSOR INFO"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelProximityName"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelProximityPower"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelProximityVendor"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelProximityRes"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelProximityMaxRange"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelProximityVersion"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo18"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="HUMIDITY SENSOR INFO"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelHumidityName"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelHumidityPower"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelHumidityVendor"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelHumidityRes"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelHumidityMaxRange"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelHumidityVersion"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelTitulo20"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:gravity="center"
+                android:text="MAGNETIC FIELD SENSOR INFO"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#C7C6C1" />
+
+            <TextView
+                android:id="@+id/labelMagneticName"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelMagneticPower"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelMagneticVendor"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelMagneticRes"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelMagneticMaxRange"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/labelMagneticVersion"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/description"
+                android:textColor="#000000"
+                android:textColorHint="#00D6BCBC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

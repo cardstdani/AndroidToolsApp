@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemDeviceInfo"
+        android:title="Device Info" />
+    <item
+        android:id="@+id/itemDeviceMonitor"
+        android:title="Device Monitor" />
+    <item
+        android:id="@+id/itemSensors"
+        android:title="Sensors" />
+    <item
+        android:id="@+id/itemDataTransfer"
+        android:title="Data Transfer" />
+    <item
+        android:id="@+id/itemOperations"
+        android:title="Operations" />
+</menu>

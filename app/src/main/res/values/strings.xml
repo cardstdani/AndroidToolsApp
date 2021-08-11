@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Toolbar</string>
+    <string name="description">Description</string>
+    <string name="title_activity_monitor">MonitorActivity</string>
+</resources>
